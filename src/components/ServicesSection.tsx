@@ -1,58 +1,37 @@
 
 import { Code, Database, Layout, Server, Smartphone, Brain } from 'lucide-react';
 import { Card } from '@/components/ui/card';
+import { useTranslation } from 'react-i18next';
 
 const services = [
-  {
-    title: "Frontend Development",
-    icon: Layout,
-    description: "Building responsive and interactive user interfaces using modern frontend technologies like React and Angular.",
-    highlights: ["Responsive Design", "UI/UX Implementation", "State Management", "Performance Optimization"],
-  },
-  {
-    title: "Backend Development",
-    icon: Server,
-    description: "Creating robust server-side applications using Node.js, Express, and other backend technologies.",
-    highlights: ["API Development", "Authentication", "Server Configuration", "Performance Optimization"],
-  },
-  {
-    title: "Database Design",
-    icon: Database,
-    description: "Designing and optimizing database schemas and queries for MongoDB and other database systems.",
-    highlights: ["Schema Design", "Query Optimization", "Data Modeling", "Database Management"],
-  },
-  {
-    title: "Full Stack Development",
-    icon: Code,
-    description: "End-to-end development of web applications, from designing responsive UIs to building robust backends.",
-    highlights: ["MERN Stack", "Full Application Lifecycle", "Deployment", "Maintenance"],
-  },
-  {
-    title: "Build Mobile App",
-    icon: Smartphone,
-    description: "Designing and delivering cross-platform mobile apps with native performance and delightful UX.",
-    highlights: ["Flutter", "React Native", "Push Notifications", "App Store Deployments"],
-  },
-  {
-    title: "AI Software",
-    icon: Brain,
-    description: "Developing AI-powered software: NLP chatbots, recommendation engines, and LLM integrations.",
-    highlights: ["NLP", "LLMs", "Recommendation Systems", "MLOps"],
-  },
+  { key: 'frontend', icon: Layout },
+  { key: 'backend', icon: Server },
+  { key: 'database', icon: Database },
+  { key: 'fullstack', icon: Code },
+  { key: 'mobile', icon: Smartphone },
+  { key: 'ai', icon: Brain },
 ];
 
 const ServicesSection = () => {
+  const { t } = useTranslation();
+  
   return (
     <section id="services" className="section bg-secondary/30">
       <div className="container">
         <div className="text-center mb-12">
-          <p className="subheading">What I Offer</p>
-          <h2 className="heading text-3xl md:text-4xl">My Services</h2>
+          <p className="subheading">{t('services.subtitle')}</p>
+          <h2 className="heading text-3xl md:text-4xl">{t('services.title')}</h2>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {services.map((service, index) => {
             const Icon = service.icon;
+            const highlights = [];
+            for (let i = 1; i <= 4; i++) {
+              const highlight = t(`services.${service.key}.highlights.${i}`, { defaultValue: '' });
+              if (highlight) highlights.push(highlight);
+            }
+            
             return (
               <Card 
                 key={index} 
@@ -64,10 +43,10 @@ const ServicesSection = () => {
                     <Icon size={24} className="text-white" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold mb-2">{service.title}</h3>
-                    <p className="text-muted-foreground mb-4">{service.description}</p>
+                    <h3 className="text-xl font-bold mb-2">{t(`services.${service.key}.title`)}</h3>
+                    <p className="text-muted-foreground mb-4">{t(`services.${service.key}.description`)}</p>
                     <ul className="space-y-2">
-                      {service.highlights.map((highlight, i) => (
+                      {highlights.map((highlight, i) => (
                         <li key={i} className="flex items-center gap-2">
                           <div className="h-1.5 w-1.5 rounded-full bg-purple-light"></div>
                           <span className="text-sm">{highlight}</span>
@@ -83,7 +62,7 @@ const ServicesSection = () => {
         
         <div className="text-center mt-12 max-w-2xl mx-auto">
           <p className="text-lg">
-            I offer end-to-end web development services, from designing responsive UIs to building robust backends. Let's work together to bring your web application ideas to life.
+            {t('services.closing')}
           </p>
         </div>
       </div>

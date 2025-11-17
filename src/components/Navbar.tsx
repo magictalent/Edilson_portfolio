@@ -2,18 +2,21 @@
 import { useState, useEffect } from 'react';
 import { Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { useTranslation } from 'react-i18next';
+import LanguageSwitcher from './LanguageSwitcher';
 
 const NavLinks = [
-  { name: 'Home', href: '#home' },
-  { name: 'About', href: '#about' },
-  { name: 'Experience', href: '#experience' },
-  { name: 'Skills', href: '#skills' },
-  { name: 'Projects', href: '#projects' },
-  { name: 'Services', href: '#services' },
-  { name: 'Contact', href: '#contact' },
+  { key: 'home', href: '#home' },
+  { key: 'about', href: '#about' },
+  { key: 'experience', href: '#experience' },
+  { key: 'skills', href: '#skills' },
+  { key: 'projects', href: '#projects' },
+  { key: 'services', href: '#services' },
+  { key: 'contact', href: '#contact' },
 ];
 
 const Navbar = () => {
+  const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [active, setActive] = useState<string>('home');
@@ -72,7 +75,7 @@ const Navbar = () => {
             const isActive = active === link.href.replace('#', '');
             return (
               <a
-                key={link.name}
+                key={link.key}
                 href={link.href}
                 aria-current={isActive ? 'page' : undefined}
                 className={`relative text-sm transition-colors ${
@@ -81,7 +84,7 @@ const Navbar = () => {
                     : 'text-muted-foreground hover:text-foreground'
                 }`}
               >
-                {link.name}
+                {t(`nav.${link.key}`)}
                 <span
                   className={`absolute -bottom-1 left-0 h-0.5 rounded bg-gradient-purple transition-all ${
                     isActive ? 'w-full opacity-100' : 'w-0 opacity-0'
@@ -91,8 +94,9 @@ const Navbar = () => {
             );
           })}
           <a href={`assets/kawasaki.pdf`} download="Edilson_Novais_Resume.pdf">
-            <Button className="bg-gradient-purple hover:opacity-90">Resume</Button>
+            <Button className="bg-gradient-purple hover:opacity-90">{t('nav.resume')}</Button>
           </a>
+          <LanguageSwitcher />
         </div>
 
         {/* Mobile Menu Button */}
@@ -111,17 +115,20 @@ const Navbar = () => {
             <div className="flex flex-col gap-4">
               {NavLinks.map((link) => (
                 <a
-                  key={link.name}
+                  key={link.key}
                   href={link.href}
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                   onClick={() => setIsOpen(false)}
                 >
-                  {link.name}
+                  {t(`nav.${link.key}`)}
                 </a>
               ))}
               <a href={`assets/kawasaki.pdf`} download="Edilson_Novais_Resume.pdf">
-                <Button className="bg-gradient-purple hover:opacity-90">Resume</Button>
+                <Button className="bg-gradient-purple hover:opacity-90">{t('nav.resume')}</Button>
               </a>
+              <div className="flex justify-center pt-2">
+                <LanguageSwitcher />
+              </div>
             </div>
           </div>
         )}

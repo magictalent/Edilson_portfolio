@@ -1,0 +1,156 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "experience": "Experience",
+    "skills": "Skills",
+    "projects": "Projects",
+    "services": "Services",
+    "contact": "Contact",
+    "resume": "Resume"
+  },
+  "hero": {
+    "availability": "Available for freelance & consulting",
+    "name": "Edilson Novais",
+    "title": "Senior Full-Stack Developer, Mobile & AI Engineer",
+    "description": "Results-driven engineer with",
+    "years": "10+ years",
+    "descriptionContinued": "of experience designing and building scalable, high-performance web and mobile applications.",
+    "passionate": "Passionate about",
+    "automation": "intelligent automation",
+    "and": "and",
+    "solutions": "user-focused solutions",
+    "contactMe": "Contact Me",
+    "downloadResume": "Download Resume",
+    "badge": "AI x Full-Stack"
+  },
+  "about": {
+    "title": "About Me",
+    "description": "I'm a Senior Full-Stack Developer, Mobile Engineer, and AI Software Engineer based in Brazil with over 10 years of experience designing and building scalable, high-performance web and mobile applications. Skilled in React, Vue, Node.js, Laravel, Python, React Native, Flutter, and cloud technologies (AWS, Azure, Docker, Kubernetes). I deliver fast, reliable, and user-focused solutions for startups, agencies, and international clients with strong expertise in system architecture, automation, and AI-powered features.",
+    "highlights": {
+      "1": "Building production-grade apps for enterprises and startups",
+      "2": "Expertise in frontend, backend, mobile, and AI/ML development",
+      "3": "Strong focus on system architecture and performance optimization",
+      "4": "Proven track record leading Agile development teams",
+      "5": "Available for full-time or part-time freelance/remote work"
+    }
+  },
+  "experience": {
+    "title": "Experience",
+    "freelancer": {
+      "company": "Freelancer, Brazil",
+      "role": "Senior Full-Stack & Mobile Engineer",
+      "period": "Jan 2020 – Present",
+      "details": {
+        "1": "Developed mobile and web apps for logistics, healthcare, delivery, and digital services.",
+        "2": "Built scalable systems using React, Vue.js, Node.js, Laravel, and Python.",
+        "3": "Implemented AI-driven features including automation tools and chatbots.",
+        "4": "Designed microservices architectures supporting 80k+ daily users.",
+        "5": "Improved backend performance by 40% and reduced server costs with optimization.",
+        "6": "Led an Agile development team and delivered multiple client projects on time."
+      }
+    },
+    "bluepixel": {
+      "company": "BluePixel Software",
+      "role": "Mobile & AI Software Engineer",
+      "period": "Mar 2017 – Dec 2019",
+      "details": {
+        "1": "Built cross-platform mobile apps using React Native and Flutter.",
+        "2": "Integrated machine learning models and NLP-based text processing systems.",
+        "3": "Created REST APIs with Node.js and PostgreSQL.",
+        "4": "Implemented secure authentication systems (JWT, OAuth2).",
+        "5": "Improved UI/UX and app performance to achieve smoother user experiences."
+      }
+    },
+    "softline": {
+      "company": "SoftLine Digital Studio",
+      "role": "Full-Stack Developer",
+      "period": "Aug 2013 – Feb 2017",
+      "details": {
+        "1": "Developed modern web applications using Laravel, Vue.js, and JavaScript.",
+        "2": "Optimized legacy systems, reducing load times by 50%.",
+        "3": "Built dashboards, admin systems, and backend APIs for local businesses.",
+        "4": "Collaborated directly with clients to gather requirements and deliver solutions."
+      }
+    }
+  },
+  "skills": {
+    "title": "Skills"
+  },
+  "services": {
+    "title": "My Services",
+    "subtitle": "What I Offer",
+    "frontend": {
+      "title": "Frontend Development",
+      "description": "Building responsive and interactive user interfaces using modern frontend technologies like React and Vue.",
+      "highlights": {
+        "1": "Responsive Design",
+        "2": "UI/UX Implementation",
+        "3": "State Management",
+        "4": "Performance Optimization"
+      }
+    },
+    "backend": {
+      "title": "Backend Development",
+      "description": "Creating robust server-side applications using Node.js, Laravel, and other backend technologies.",
+      "highlights": {
+        "1": "API Development",
+        "2": "Authentication",
+        "3": "Server Configuration",
+        "4": "Performance Optimization"
+      }
+    },
+    "database": {
+      "title": "Database Design",
+      "description": "Designing and optimizing database schemas and queries for PostgreSQL, MongoDB and other database systems.",
+      "highlights": {
+        "1": "Schema Design",
+        "2": "Query Optimization",
+        "3": "Data Modeling",
+        "4": "Database Management"
+      }
+    },
+    "fullstack": {
+      "title": "Full Stack Development",
+      "description": "End-to-end development of web applications, from designing responsive UIs to building robust backends.",
+      "highlights": {
+        "1": "Complete Stack",
+        "2": "Full Application Lifecycle",
+        "3": "Deployment",
+        "4": "Maintenance"
+      }
+    },
+    "mobile": {
+      "title": "Build Mobile App",
+      "description": "Designing and delivering cross-platform mobile apps with native performance and delightful UX.",
+      "highlights": {
+        "1": "Flutter",
+        "2": "React Native",
+        "3": "Push Notifications",
+        "4": "App Store Deployments"
+      }
+    },
+    "ai": {
+      "title": "AI Software",
+      "description": "Developing AI-powered software: NLP chatbots, recommendation engines, and LLM integrations.",
+      "highlights": {
+        "1": "NLP",
+        "2": "LLMs",
+        "3": "Recommendation Systems",
+        "4": "MLOps"
+      }
+    },
+    "closing": "I offer end-to-end web development services, from designing responsive UIs to building robust backends. Let's work together to bring your web application ideas to life."
+  },
+  "contact": {
+    "title": "Contact",
+    "location": "Brazil · Available for Remote Work",
+    "message": "For all inquiries, please reach out by email first.",
+    "emailMe": "Email Me",
+    "copy": "Copy"
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  }
+}
+

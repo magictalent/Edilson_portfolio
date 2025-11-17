@@ -2,8 +2,10 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Mail, Copy } from 'lucide-react';
 import { FaTelegramPlane, FaWhatsapp, FaGithub, FaLinkedin } from 'react-icons/fa';
+import { useTranslation } from 'react-i18next';
 
 const ContactSection = () => {
+  const { t } = useTranslation();
   const email = 'edilsonnavasis@gmail.com';
   const copyEmail = async () => {
     try {
@@ -14,19 +16,19 @@ const ContactSection = () => {
   return (
     <section id="contact" className="section bg-secondary/30">
       <div className="container">
-        <h2 className="text-3xl font-semibold text-white text-center mb-6">Contact</h2>
+        <h2 className="text-3xl font-semibold text-white text-center mb-6">{t('contact.title')}</h2>
         <div className="max-w-xl mx-auto bg-secondary/40 border border-border p-6 rounded-lg text-center animate-fade-up">
           <p className="text-gray-300 mb-2">{email}</p>
-          <p className="text-gray-400 mb-6">Brazil · Available for Remote Work</p>
-          <p className="text-gray-500 mb-4 text-sm">For all inquiries, please reach out by email first.</p>
+          <p className="text-gray-400 mb-6">{t('contact.location')}</p>
+          <p className="text-gray-500 mb-4 text-sm">{t('contact.message')}</p>
           <div className="flex justify-center gap-3">
             <a href={`mailto:${email}`}>
               <Button className="bg-gradient-purple text-white hover:opacity-90" aria-label="Email me">
-                <Mail className="mr-2 h-4 w-4" /> Email Me
+                <Mail className="mr-2 h-4 w-4" /> {t('contact.emailMe')}
               </Button>
             </a>
             <Button variant="outline" onClick={copyEmail} aria-label="Copy email">
-              <Copy className="mr-2 h-4 w-4" /> Copy
+              <Copy className="mr-2 h-4 w-4" /> {t('contact.copy')}
             </Button>
           </div>
           <div className="mt-6 flex justify-center gap-4">

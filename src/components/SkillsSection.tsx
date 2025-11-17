@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const skills = [
   "React", "Vue.js", "Next.js", "TypeScript", "JavaScript",
@@ -11,9 +12,11 @@ const skills = [
 ];
 
 const SkillsSection = () => {
+  const { t } = useTranslation();
+  
   return (
     <section id="skills" className="container px-4 py-16">
-      <h2 className="text-3xl font-semibold text-white text-center mb-8">Skills</h2>
+      <h2 className="text-3xl font-semibold text-white text-center mb-8">{t('skills.title')}</h2>
       <div className="flex flex-wrap gap-3 justify-center">
         {skills.map((skill, index) => (
           <span

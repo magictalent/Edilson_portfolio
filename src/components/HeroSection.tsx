@@ -1,7 +1,10 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
+import { useTranslation } from 'react-i18next';
 
 const HeroSection = () => {
+  const { t } = useTranslation();
+  
   return (
     <section
       id="home"
@@ -17,24 +20,24 @@ const HeroSection = () => {
         {/* Left Content */}
         <div className="flex-1 flex flex-col items-center md:items-start text-center md:text-left max-w-2xl">
           <div className="flex items-center gap-2 bg-gradient-to-r from-purple-700 via-blue-600 to-blue-500 px-4 py-1 rounded-full mb-5 shadow-lg shadow-purple-600/20">
-            <span className="text-xs font-semibold text-white tracking-wide">Available for freelance & consulting</span>
+            <span className="text-xs font-semibold text-white tracking-wide">{t('hero.availability')}</span>
           </div>
           <h1 className="text-5xl md:text-7xl font-extrabold text-slate-50 tracking-tight leading-tight md:leading-tight mb-4 drop-shadow-xl">
             <span className="bg-gradient-to-r from-purple-400 via-fuchsia-400 to-blue-400 bg-clip-text text-transparent">
-              Edilson Novais
+              {t('hero.name')}
             </span>
           </h1>
           <h2 className="text-lg md:text-2xl text-slate-300 font-medium mb-6 tracking-wide">
-            Senior Full-Stack Developer, Mobile & AI Engineer
+            {t('hero.title')}
           </h2>
           <p className="text-slate-300/90 leading-relaxed text-[1.1rem] md:text-lg max-w-xl mb-8">
-            Results-driven engineer with <span className="font-semibold text-fuchsia-400/90">10+ years</span> of experience designing and building scalable, high-performance web and mobile applications.<br/>
-            Passionate about <span className="text-blue-400 font-semibold">intelligent automation</span> and <span className="text-purple-400 font-semibold">user-focused solutions</span>.
+            {t('hero.description')} <span className="font-semibold text-fuchsia-400/90">{t('hero.years')}</span> {t('hero.descriptionContinued')}<br/>
+            {t('hero.passionate')} <span className="text-blue-400 font-semibold">{t('hero.automation')}</span> {t('hero.and')} <span className="text-purple-400 font-semibold">{t('hero.solutions')}</span>.
           </p>
           <div className="flex flex-col md:flex-row items-center gap-4 w-full md:w-auto">
             <a href="#contact" className="w-full md:w-auto">
               <Button className="w-full md:w-auto bg-gradient-to-r from-fuchsia-600 to-blue-500 text-white shadow-lg hover:from-fuchsia-400 hover:to-blue-400 hover:scale-[1.03] transition-transform duration-150">
-                Contact Me
+                {t('hero.contactMe')}
               </Button>
             </a>
             <a href={`assets/edilson_novais_resume.pdf`} download="Edilson_Novais_Resume.pdf" className="w-full md:w-auto">
@@ -42,7 +45,7 @@ const HeroSection = () => {
                 variant="outline"
                 className="w-full md:w-auto border-slate-500/60 text-slate-100 hover:bg-secondary/30 hover:border-fuchsia-400/70 transition"
               >
-                Download Resume
+                {t('hero.downloadResume')}
               </Button>
             </a>
           </div>
@@ -57,13 +60,13 @@ const HeroSection = () => {
               className="w-44 h-44 md:w-64 md:h-64 rounded-full object-cover border-4 border-fuchsia-400/60 shadow-2xl bg-secondary/30 group-hover:scale-[1.04] transition-transform duration-300"
             />
             <div className="absolute bottom-2 right-2 rounded-xl px-3 py-1.5 flex items-center bg-gradient-to-r from-fuchsia-700/80 via-fuchsia-500/70 to-blue-700/80 shadow-md shadow-fuchsia-800/10">
-              <span className="text-xs text-slate-100 font-bold tracking-wide">AI x Full-Stack</span>
+              <span className="text-xs text-slate-100 font-bold tracking-wide">{t('hero.badge')}</span>
             </div>
           </div>
         </div>
       </div>
       {/* Some subtle floating decorations */}
-      <style jsx>{`
+      <style dangerouslySetInnerHTML={{__html: `
         .animate-blob1 {
           animation: blobFloat 14s ease-in-out infinite;
         }
@@ -88,7 +91,7 @@ const HeroSection = () => {
           40% { transform: translate(15px, -15px) scale(1.04);}
           70% { transform: translate(-15px, 18px) scale(1.01);}
         }
-      `}</style>
+      `}} />
     </section>
   );
 };

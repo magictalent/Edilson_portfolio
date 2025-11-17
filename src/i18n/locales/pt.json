@@ -1,0 +1,156 @@
+{
+  "nav": {
+    "home": "Início",
+    "about": "Sobre",
+    "experience": "Experiência",
+    "skills": "Habilidades",
+    "projects": "Projetos",
+    "services": "Serviços",
+    "contact": "Contato",
+    "resume": "Currículo"
+  },
+  "hero": {
+    "availability": "Disponível para freelance e consultoria",
+    "name": "Edilson Novais",
+    "title": "Desenvolvedor Full-Stack Sênior, Engenheiro Mobile & IA",
+    "description": "Engenheiro orientado a resultados com",
+    "years": "mais de 10 anos",
+    "descriptionContinued": "de experiência projetando e construindo aplicações web e mobile escaláveis e de alto desempenho.",
+    "passionate": "Apaixonado por",
+    "automation": "automação inteligente",
+    "and": "e",
+    "solutions": "soluções focadas no usuário",
+    "contactMe": "Entre em Contato",
+    "downloadResume": "Baixar Currículo",
+    "badge": "IA x Full-Stack"
+  },
+  "about": {
+    "title": "Sobre Mim",
+    "description": "Sou um Desenvolvedor Full-Stack Sênior, Engenheiro Mobile e Engenheiro de Software de IA baseado no Brasil com mais de 10 anos de experiência projetando e construindo aplicações web e mobile escaláveis e de alto desempenho. Especializado em React, Vue, Node.js, Laravel, Python, React Native, Flutter e tecnologias de nuvem (AWS, Azure, Docker, Kubernetes). Entrego soluções rápidas, confiáveis e focadas no usuário para startups, agências e clientes internacionais com forte expertise em arquitetura de sistemas, automação e recursos alimentados por IA.",
+    "highlights": {
+      "1": "Construindo aplicativos de nível de produção para empresas e startups",
+      "2": "Expertise em desenvolvimento frontend, backend, mobile e IA/ML",
+      "3": "Forte foco em arquitetura de sistemas e otimização de desempenho",
+      "4": "Histórico comprovado liderando equipes de desenvolvimento Ágil",
+      "5": "Disponível para trabalho freelance/remoto em tempo integral ou parcial"
+    }
+  },
+  "experience": {
+    "title": "Experiência",
+    "freelancer": {
+      "company": "Freelancer, Brasil",
+      "role": "Engenheiro Full-Stack & Mobile Sênior",
+      "period": "Jan 2020 – Presente",
+      "details": {
+        "1": "Desenvolvi aplicativos mobile e web para logística, saúde, delivery e serviços digitais.",
+        "2": "Construí sistemas escaláveis usando React, Vue.js, Node.js, Laravel e Python.",
+        "3": "Implementei recursos baseados em IA incluindo ferramentas de automação e chatbots.",
+        "4": "Projetei arquiteturas de microsserviços suportando mais de 80 mil usuários diários.",
+        "5": "Melhorei o desempenho do backend em 40% e reduzi custos de servidor com otimização.",
+        "6": "Liderei uma equipe de desenvolvimento Ágil e entreguei múltiplos projetos no prazo."
+      }
+    },
+    "bluepixel": {
+      "company": "BluePixel Software",
+      "role": "Engenheiro de Software Mobile & IA",
+      "period": "Mar 2017 – Dez 2019",
+      "details": {
+        "1": "Construí aplicativos mobile multiplataforma usando React Native e Flutter.",
+        "2": "Integrei modelos de aprendizado de máquina e sistemas de processamento de texto baseados em NLP.",
+        "3": "Criei APIs REST com Node.js e PostgreSQL.",
+        "4": "Implementei sistemas de autenticação segura (JWT, OAuth2).",
+        "5": "Melhorei UI/UX e desempenho de aplicativos para experiências mais fluidas."
+      }
+    },
+    "softline": {
+      "company": "SoftLine Digital Studio",
+      "role": "Desenvolvedor Full-Stack",
+      "period": "Ago 2013 – Fev 2017",
+      "details": {
+        "1": "Desenvolvi aplicações web modernas usando Laravel, Vue.js e JavaScript.",
+        "2": "Otimizei sistemas legados, reduzindo tempos de carregamento em 50%.",
+        "3": "Construí dashboards, sistemas administrativos e APIs backend para empresas locais.",
+        "4": "Colaborei diretamente com clientes para coletar requisitos e entregar soluções."
+      }
+    }
+  },
+  "skills": {
+    "title": "Habilidades"
+  },
+  "services": {
+    "title": "Meus Serviços",
+    "subtitle": "O Que Eu Ofereço",
+    "frontend": {
+      "title": "Desenvolvimento Frontend",
+      "description": "Construindo interfaces de usuário responsivas e interativas usando tecnologias frontend modernas como React e Vue.",
+      "highlights": {
+        "1": "Design Responsivo",
+        "2": "Implementação UI/UX",
+        "3": "Gerenciamento de Estado",
+        "4": "Otimização de Desempenho"
+      }
+    },
+    "backend": {
+      "title": "Desenvolvimento Backend",
+      "description": "Criando aplicações server-side robustas usando Node.js, Laravel e outras tecnologias backend.",
+      "highlights": {
+        "1": "Desenvolvimento de APIs",
+        "2": "Autenticação",
+        "3": "Configuração de Servidor",
+        "4": "Otimização de Desempenho"
+      }
+    },
+    "database": {
+      "title": "Design de Banco de Dados",
+      "description": "Projetando e otimizando esquemas e consultas de banco de dados para PostgreSQL, MongoDB e outros sistemas.",
+      "highlights": {
+        "1": "Design de Esquema",
+        "2": "Otimização de Consultas",
+        "3": "Modelagem de Dados",
+        "4": "Gerenciamento de Banco de Dados"
+      }
+    },
+    "fullstack": {
+      "title": "Desenvolvimento Full Stack",
+      "description": "Desenvolvimento completo de aplicações web, desde o design de UIs responsivas até a construção de backends robustos.",
+      "highlights": {
+        "1": "Stack Completo",
+        "2": "Ciclo Completo de Aplicação",
+        "3": "Deploy",
+        "4": "Manutenção"
+      }
+    },
+    "mobile": {
+      "title": "Desenvolvimento de Aplicativos Mobile",
+      "description": "Projetando e entregando aplicativos mobile multiplataforma com desempenho nativo e UX encantadora.",
+      "highlights": {
+        "1": "Flutter",
+        "2": "React Native",
+        "3": "Notificações Push",
+        "4": "Publicação em Lojas de Aplicativos"
+      }
+    },
+    "ai": {
+      "title": "Software de IA",
+      "description": "Desenvolvendo software alimentado por IA: chatbots NLP, sistemas de recomendação e integrações LLM.",
+      "highlights": {
+        "1": "NLP",
+        "2": "LLMs",
+        "3": "Sistemas de Recomendação",
+        "4": "MLOps"
+      }
+    },
+    "closing": "Ofereço serviços completos de desenvolvimento web, desde o design de UIs responsivas até a construção de backends robustos. Vamos trabalhar juntos para dar vida às suas ideias de aplicações web."
+  },
+  "contact": {
+    "title": "Contato",
+    "location": "Brasil · Disponível para Trabalho Remoto",
+    "message": "Para todas as consultas, entre em contato por e-mail primeiro.",
+    "emailMe": "Enviar E-mail",
+    "copy": "Copiar"
+  },
+  "footer": {
+    "rights": "Todos os direitos reservados."
+  }
+}
+

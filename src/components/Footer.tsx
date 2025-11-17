@@ -1,7 +1,9 @@
 
 import { Github, Instagram, Linkedin, Mail } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
+  const { t } = useTranslation();
   const year = new Date().getFullYear();
 
   return (
@@ -32,29 +34,29 @@ const Footer = () => {
           
           <div className="flex flex-wrap justify-center gap-6 mb-8">
             <a href="#home" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-              Home
+              {t('nav.home')}
             </a>
             <a href="#about" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-              About
+              {t('nav.about')}
             </a>
             <a href="#experience" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-              Experience
+              {t('nav.experience')}
             </a>
             <a href="#skills" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-              Skills
+              {t('nav.skills')}
             </a>
             <a href="#projects" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-              Projects
+              {t('nav.projects')}
             </a>
             <a href="#services" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-              Services
+              {t('nav.services')}
             </a>
             <a href="#contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-              Contact
+              {t('nav.contact')}
             </a>
           </div>
           
-          <p className="text-sm text-muted-foreground">&copy; {year} Edilson Novais. All rights reserved.</p>
+          <p className="text-sm text-muted-foreground">&copy; {year} Edilson Novais. {t('footer.rights')}</p>
         </div>
       </div>
     </footer>
